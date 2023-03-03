@@ -1,6 +1,6 @@
 # Stage-en-python-et-analyse-de-donn-es
 
-1. Lire le fichier CSV et stocker les données dans une structure de données appropriée.
+### 1. Lire le fichier CSV et stocker les données dans une structure de données appropriée.
 ```
 import pandas as pd
 
@@ -20,15 +20,12 @@ produits = data['produit'].unique()
 print(produits)
 
 
-
-
-
 ventes = {}
 couts = {}
 benefices = {}
 ```
 
-2. Calculer les ventes totales et le bénéfice pour chaque région.
+### 2. Calculer les ventes totales et le bénéfice pour chaque région.
 ```
 for index, row in data.iterrows():
     # calcul des ventes, des couts et des benefices pour chaque region
@@ -65,9 +62,7 @@ for region in regions:
     print('benefices de la region',region,'===',benefices[region])
  
 ```
-
-
-3. Afficher le pourcentage de ventes totales de chaque produit pour l'ensemble de l'entreprise.
+### 3. Afficher le pourcentage de ventes totales de chaque produit pour l'ensemble de l'entreprise.
 ```
 
 #calcul le pourcentage de ventes pour chaque produit
@@ -100,7 +95,7 @@ for produit in produits:
 
 ```
 
-4.Ajouter une fonctionnalité pour afficher les dates avec les ventes les plus élevées pour chaque région.
+### 4.Ajouter une fonctionnalité pour afficher les dates avec les ventes les plus élevées pour chaque région.
 ```
 print('::::::::::les dates avec les ventes les plus elevees pour chaque region :::::::::::')
 for region in regions:
@@ -115,7 +110,7 @@ for region in regions:
  
 ```
 
-5.Ajouter une fonctionnalité pour afficher les régions avec la plus grande marge bénéficiaire.
+### 5.Ajouter une fonctionnalité pour afficher les régions avec la plus grande marge bénéficiaire.
 ```
 print('::::::::::les regions avec la plus grande marge beneficiaire. :::::::::::')
 regions_best = [] #regions avec la plus grande marge beneficiaire
