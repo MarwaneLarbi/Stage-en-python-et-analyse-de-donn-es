@@ -161,3 +161,35 @@ for region in regions_best:
     print(region)
 ```
 
+## Exemple de resultat 
+
+['A' 'B' 'C']
+['Nord' 'Sud']
+
+
+::::::::::::Ventes totales par région :::::::
+Ventes totales pour la region Nord === 14000.0
+Ventes totales pour la region Sud === 8500.0
+
+
+::::::::::::benefices par région :::::::::::
+benefices de la region Nord === 4700.0
+benefices de la region Sud === 4600.0
+
+
+::::::::::Pourcentage de ventes par produit :::::::::::
+Pourcentage de ventes par le produit : A  est  6.666666666666667
+Pourcentage de ventes par le produit : B  est  53.333333333333336
+Pourcentage de ventes par le produit : C  est  40.0
+
+
+::::::::::les dates avec les ventes les plus élevées pour chaque région :::::::::::
+Pour la région  Nord  la date avec les ventes les plus élevées est le  2022-01-02
+Pour la région  Sud  la date avec les ventes les plus élevées est le  2022-01-01
+
+
+
+
+::::::::::les régions avec la plus grande marge bénéficiaire. :::::::::::
+La région avec la plus grande marge bénéficiaire est Sud avec une marge de -4600.0
+
