@@ -1,7 +1,9 @@
 # Stage-en-python-et-analyse-de-donn-es
 
 ### 1. Lire le fichier CSV et stocker les données dans une structure de données appropriée.
-j'ai importé la bibliothèque pandas et j'ai utilisé la fonction read_csv pour lire un fichier CSV appelé "Data.csv". Ensuite, j'ai affiché les régions et les produits distincts dans les données en utilisant la méthode unique(). Enfin, j'ai créé des dictionnaires vides pour stocker les ventes, les coûts et les bénéfices.
+j'ai importé la bibliothèque pandas et j'ai utilisé la fonction read_csv pour lire un fichier CSV appelé "Data.csv".
+
+Ensuite, j'ai affiché les régions et les produits distincts dans les données en utilisant la méthode unique(). Enfin, j'ai créé des dictionnaires vides pour stocker les ventes, les coûts et les bénéfices.
 ```
 import pandas as pd
 
@@ -70,13 +72,13 @@ for region in regions:
  
 ```
 ### 3. Afficher le pourcentage de ventes totales de chaque produit pour l'ensemble de l'entreprise.
-Tout d'abord, je crée une variable "ventes_totales" qui va stocker la somme totale des ventes, et un dictionnaire "ventes_par_produit" qui va contenir les ventes par produit.
+Tout d'abord, j'ai créé une variable "ventes_totales" qui stocke la somme totale des ventes, et un dictionnaire "ventes_par_produit" qui contient les ventes par produit.
 
-Ensuite, je parcours chaque ligne du dataframe "data" en utilisant la méthode "iterrows()" de pandas. Pour chaque ligne, je récupère le nom du produit, la quantité vendue et le prix unitaire. Je calcule la somme totale des ventes en multipliant la quantité vendue par le prix unitaire, et j'ajoute ce montant à "ventes_totales". Je mets également à jour le dictionnaire "ventes_par_produit" en ajoutant les ventes pour le produit correspondant.
+Ensuite, j'ai parcouru chaque ligne du dataframe "data" en utilisant la méthode "iterrows()" de pandas. Pour chaque ligne, j'ai récupéré le nom du produit, la quantité vendue et le prix unitaire. J'ai calculé la somme totale des ventes en multipliant la quantité vendue par le prix unitaire, et j'ai ajouté ce montant à "ventes_totales". J'ai également mis à jour le dictionnaire "ventes_par_produit" en ajoutant les ventes pour le produit correspondant.
 
-Une fois que j'ai calculé les ventes totales et les ventes par produit, je calcule le pourcentage de ventes pour chaque produit en divisant les ventes par produit par les ventes totales et en multipliant par 100.
+Une fois que j'ai calculé les ventes totales et les ventes par produit, j'ai calculé le pourcentage de ventes pour chaque produit en divisant les ventes par produit par les ventes totales et en multipliant par 100.
 
-Enfin, j'affiche les résultats en parcourant les produits et en affichant le pourcentage de ventes pour chaque produit.
+Enfin, j'ai affiché les résultats en parcourant les produits et en affichant le pourcentage de ventes pour chaque produit.
 
 ```
 
@@ -111,7 +113,11 @@ for produit in produits:
 ```
 
 ### 4.Ajouter une fonctionnalité pour afficher les dates avec les ventes les plus élevées pour chaque région.
-Je parcours chaque région de la liste "regions" et sélectionne les données correspondantes dans le dataframe "data". Ensuite, je trouve la quantité de vente maximale pour chaque région en utilisant la méthode "max()" de pandas. Puis, je trouve la date associée à la vente maximale en sélectionnant la ligne où la quantité de vente est maximale pour cette région. Enfin, j'affiche la région et la date avec les ventes les plus élevées pour chaque région.
+J'ai parcouru chaque région de la liste "regions" et sélectionné les données correspondantes dans le dataframe "data". Ensuite, j'ai trouvé la quantité de vente maximale pour chaque région en utilisant la méthode "max()" de pandas. 
+
+Puis, j'ai trouvé la date associée à la vente maximale en sélectionnant la ligne où la quantité de vente est maximale pour cette région.
+
+Enfin, j'ai affiché la région et la date avec les ventes les plus élevées pour chaque région.
 ```
 print('::::::::::les dates avec les ventes les plus elevees pour chaque region :::::::::::')
 for region in regions:
@@ -127,9 +133,12 @@ for region in regions:
 ```
 
 ### 5.Ajouter une fonctionnalité pour afficher les régions avec la plus grande marge bénéficiaire.
-J'ai écrit le code ci-dessus qui permet de déterminer les régions ayant la plus grande marge bénéficiaire. Tout d'abord, le code parcourt chaque région du dataframe et calcule la marge bénéficiaire associée. Ensuite, il compare cette marge à la marge bénéficiaire maximale enregistrée jusqu'à présent. Si la marge bénéficiaire courante est supérieure à la marge maximale, le code met à jour la liste des régions ayant la plus grande marge bénéficiaire et la marge maximale. Si la marge bénéficiaire est égale à la marge maximale, le code ajoute simplement la région courante à la liste des régions ayant la plus grande marge bénéficiaire.
+J'ai écrit le code ci-dessus qui permet de déterminer les régions ayant la plus grande marge bénéficiaire.
+Tout d'abord, je crée une liste "regions_best" qui va contenir les régions ayant la plus grande marge bénéficiaire, ainsi qu'une variable "marge_best" qui va stocker la valeur de la marge bénéficiaire maximale.
 
-Enfin, le code affiche les régions ayant la plus grande marge bénéficiaire.
+Ensuite, je parcours chaque région du dataframe et calcule la marge bénéficiaire associée. Pour chaque région, je récupère la marge bénéficiaire calculée précédemment et je la compare à la marge bénéficiaire maximale enregistrée jusqu'à présent. Si la marge bénéficiaire courante est supérieure à la marge maximale, je mets à jour la liste des régions ayant la plus grande marge bénéficiaire et la marge maximale. Si la marge bénéficiaire est égale à la marge maximale, j'ajoute simplement la région courante à la liste des régions ayant la plus grande marge bénéficiaire.
+
+Enfin, j'ai  affiché les régions ayant la plus grande marge bénéficiaire en parcourant la liste "regions_best".
 ```
 print('::::::::::les regions avec la plus grande marge beneficiaire. :::::::::::')
 regions_best = [] #regions avec la plus grande marge beneficiaire
