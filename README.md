@@ -1,6 +1,7 @@
 # Stage-en-python-et-analyse-de-donn-es
 
 ### 1. Lire le fichier CSV et stocker les données dans une structure de données appropriée.
+j'ai importé la bibliothèque pandas et j'ai utilisé la fonction read_csv pour lire un fichier CSV appelé "Data.csv". Ensuite, j'ai affiché les régions et les produits distincts dans les données en utilisant la méthode unique(). Enfin, j'ai créé des dictionnaires vides pour stocker les ventes, les coûts et les bénéfices.
 ```
 import pandas as pd
 
@@ -26,6 +27,12 @@ benefices = {}
 ```
 
 ### 2. Calculer les ventes totales et le bénéfice pour chaque région.
+
+j'ai utilisé   la méthode "iterrows()" de pandas pour parcourir chaque ligne du dataframe "data" et calculer les ventes, les coûts et les bénéfices pour chaque région.
+
+Pour chaque ligne, je récupère la région, la quantité vendue, le prix unitaire et le coût total de chaque produit vendu. Il met ensuite à jour les ventes et les coûts pour la région correspondante, en initialisant les ventes et les coûts s'il s'agit d'une nouvelle région, ou en ajoutant les ventes et les coûts actuels aux ventes et aux coûts existants pour cette région.
+
+Une fois que les ventes et les coûts ont été calculés pour chaque région, on calcule les bénéfices en soustrayant les ventes des coûts. Enfin,  affiche les ventes totales et les bénéfices pour chaque région.
 ```
 for index, row in data.iterrows():
     # calcul des ventes, des couts et des benefices pour chaque region
