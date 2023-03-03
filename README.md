@@ -195,6 +195,6 @@ Pour la région  Sud  la date avec les ventes les plus élevées est le  2022-01
 
 
 ::::::::::les régions avec la plus grande marge bénéficiaire. :::::::::::
-La région avec la plus grande marge bénéficiaire est Sud avec une marge de -4600.0
-
+Les regions avec la plus grande marge beneficiaire sont :
+Nord
 ```
