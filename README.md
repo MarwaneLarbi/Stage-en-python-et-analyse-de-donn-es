@@ -163,8 +163,12 @@ for region in regions_best:
 
 ## Exemple de resultat 
 ```
-['A' 'B' 'C']
+::::::::::::les  regions :::::::::::
 ['Nord' 'Sud']
+
+
+::::::::::::les produits :::::::::::
+['A' 'B' 'C']
 
 
 ::::::::::::Ventes totales par région :::::::
